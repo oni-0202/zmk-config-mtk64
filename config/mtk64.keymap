@@ -38,6 +38,15 @@
 };
 
 / {
+    macros {
+        Pass: Pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp O &kp E &kp I &kp T &kp E &kp C &kp M &kp O &kp N3 &kp N0 &kp N2 &kp N8 &kp N4 &kp N1>;
+            label = "PASS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,7 +70,7 @@
 
         layer_2 {
             bindings = <
-&to 0  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &trans  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS  &trans  &kp PG_UP  &mmv MOVE_UP  &kp PG_DN  &trans  &kp F12  &trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp HOME  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp END  &trans  &trans  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &to 3  &mkp MB4  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans  &trans  &to 3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F2  &kp HOME  &kp END  &trans  &trans  &lt 3 RET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&to 0  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &trans  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS  &trans  &kp PG_UP  &mmv MOVE_UP  &kp PG_DN  &Pass  &kp F12  &trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp HOME  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp END  &trans  &trans  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &to 3  &mkp MB4  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans  &trans  &to 3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F2  &kp HOME  &kp END  &trans  &trans  &lt 3 RET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
