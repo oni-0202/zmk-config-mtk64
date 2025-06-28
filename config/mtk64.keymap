@@ -60,8 +60,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_CONTROL &msc SCRL_UP>,
-                <&macro_release>;
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&msc SCRL_UP>,
+                <&macro_release>,
+                <&kp LCTRL>;
 
             label = "CtrlUp";
         };
@@ -71,7 +74,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &msc SCRL_DOWN>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&msc SCRL_DOWN>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
