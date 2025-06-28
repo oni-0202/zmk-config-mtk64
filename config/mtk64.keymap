@@ -58,19 +58,14 @@
         CtrlUp: CtrlUp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &msc SCRL_UP>;
+            bindings = <&kp LEFT_CONTROL &key_repeat &msc SCRL_UP>;
             label = "CtrlUp";
         };
 
         CtrlDown: CtrlDown {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&msc SCRL_DOWN>;
-
+            bindings = <&kp LCTRL &msc SCRL_DOWN>;
             label = "CtrlDown";
         };
     };
