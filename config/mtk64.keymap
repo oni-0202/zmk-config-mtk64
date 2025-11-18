@@ -96,6 +96,13 @@
             bindings = <&kp END &kp LS(HOME) &kp DELETE>;
             label = "ROW_DELETE";
         };
+
+        all_delete: all_delete {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(HOME)) &kp DEL>;
+            label = "ALL_DELETE";
+        };
     };
 
     keymap {
@@ -103,7 +110,7 @@
 
         default_layer {
             bindings = <
-&kp CAPS  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp SLASH  &kp ESC  &kp Q  &kp L  &kp U  &kp COMMA  &kp PERIOD  &kp F  &kp W  &kp R  &kp Y  &kp P  &kp EQUAL  &kp TAB  &kp E  &kp I  &kp A  &kp O  &kp MINUS  &kp K  &kp T  &kp N  &kp S  &kp H  &kp RET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp SEMICOLON  &kp LS(CAPS)  &mt RIGHT_ALT UP_ARROW  &kp G  &kp D  &kp M  &kp J  &kp B  &kp RIGHT_SHIFT  &kp LALT  &kp LCTRL  &kp RCTRL  &kp DELETE  &kp RET  &mt RSHFT DOWN_ARROW  &kp LEFT_GUI  &kp RIGHT_ALT  &kp LS(LC(END))  &kp LC(LS(HOME))  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp ENTER  &tog 2  &lt 1 SPACE  &lt 2 BACKSPACE  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
+&kp CAPS  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp SLASH  &kp ESC  &kp Q  &kp L  &kp U  &kp COMMA  &kp PERIOD  &kp F  &kp W  &kp R  &kp Y  &kp P  &kp EQUAL  &kp TAB  &kp E  &kp I  &kp A  &kp O  &kp MINUS  &kp K  &kp T  &kp N  &kp S  &kp H  &kp RET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp SEMICOLON  &kp LS(CAPS)  &mt RIGHT_ALT UP_ARROW  &kp G  &kp D  &kp M  &kp J  &kp B  &kp RIGHT_SHIFT  &kp LALT  &kp LCTRL  &kp RCTRL  &kp DELETE  &kp BACKSPACE  &mt LEFT_SHIFT DOWN  &kp LEFT_GUI  &kp RIGHT_ALT  &kp LS(LC(END))  &kp LC(LS(HOME))  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp ENTER  &tog 2  &lt 1 SPACE  &lt 2 BACKSPACE  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
             >;
 
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
@@ -111,7 +118,7 @@
 
         layer_1 {
             bindings = <
-&bt BT_SEL 0  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &studio_unlock  &trans  &kp MINUS  &kp KP_NUMBER_7  &kp F5  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &kp PG_UP  &mmv MOVE_UP  &kp PG_DN  &trans  &kp F12  &trans  &kp SLASH  &lt 3 F5  &mkp MCLK  &mkp LCLK  &mkp RCLK  &kp HOME  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp END  &kp LC(RET)  &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp F2  &kp LEFT_WIN  &trans  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &kp LA(RETURN)  &to 0  &to 2  &trans  &trans  &kp LC(RET)  &kp RA(ENTER)  &trans  &trans  &trans  &trans  &kp HOME  &kp END  &trans  &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &studio_unlock  &trans  &kp MINUS  &kp KP_NUMBER_7  &kp F5  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &kp PG_UP  &mmv MOVE_UP  &kp PG_DN  &trans  &kp F12  &trans  &kp F2  &lt 3 F5  &mkp MCLK  &mkp LCLK  &mkp RCLK  &kp HOME  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp END  &KagiKakko  &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp F2  &kp LEFT_WIN  &trans  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &kp LA(RETURN)  &to 0  &to 2  &trans  &trans  &kp LC(RET)  &kp RA(ENTER)  &trans  &trans  &trans  &trans  &kp HOME  &kp END  &trans  &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp D S>, <&scroll_ctrl_up_down>;
@@ -119,7 +126,7 @@
 
         layer_2 {
             bindings = <
-&kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp SLASH  &kp LC(LS(LA(ESC)))  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS  &trans  &kp PG_UP  &mmv MOVE_UP  &kp PG_DN  &Pass  &kp EQUAL  &trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &KagiKakko  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp END  &kp LEFT_BRACKET  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &to 3  &trans  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &kp RIGHT_BRACKET  &to 0  &to 3  &row_delete  &kp BACKSPACE  &trans  &trans  &kp APOS  &kp BACKSLASH  &trans  &kp F2  &kp HOME  &kp END  &trans  &trans  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp SLASH  &kp LC(LS(LA(ESC)))  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS  &trans  &kp PG_UP  &mmv MOVE_UP  &kp PG_DN  &Pass  &kp EQUAL  &trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &KagiKakko  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp END  &kp LEFT_BRACKET  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &to 3  &trans  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &kp RIGHT_BRACKET  &to 0  &to 3  &all_delete  &row_delete  &trans  &trans  &kp APOS  &kp BACKSLASH  &trans  &kp F2  &kp HOME  &kp END  &trans  &trans  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
