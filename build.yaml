@@ -15,13 +15,13 @@
 #     shield: corne_left
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: corne_left_with_logging
-#
+#  
+#  snippet: studio-rpc-usb-uart
+#  cmake-args: -DCONFIG_ZMK_STUDIO=y
 ---
 include:
  - board: xiao_ble
    shield: mtk64_R rgbled_adapter
-   snippet: studio-rpc-usb-uart
-   cmake-args: -DCONFIG_ZMK_STUDIO=y
  - board: xiao_ble
    shield: mtk64_L rgbled_adapter
  - board: xiao_ble
