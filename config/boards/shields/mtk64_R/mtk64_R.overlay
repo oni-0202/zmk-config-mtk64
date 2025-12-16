@@ -63,6 +63,20 @@
         motion-gpios = <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; 
         zephyr,axis-x = <INPUT_REL_X>;
         zephyr,axis-y = <INPUT_REL_Y>;
+ compatible = "pixart,pmw3610";
+    /* 既存の reg, spi-max-frequency, motion-gpios は残す */
+
+    /* 解像度の設定 (CPI) */
+    res-cpi = <1100>;
+
+    /* 軸の反転 (CONFIG_PMW3610_INVERT_X=y の代わり) */
+    x-invert;
+
+    /* 90度回転 (ORIENTATION_90=y の代わり) */
+    /* 90度回転の場合、通常は軸の割り当てを入れ替えます */
+    zephyr,axis-x = <INPUT_REL_Y>;
+    zephyr,axis-y = <INPUT_REL_X>;
+    y-invert; /* 必要に応じて調整 */
     };
 };
 
