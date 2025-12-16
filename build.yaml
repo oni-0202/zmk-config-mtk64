@@ -21,7 +21,7 @@
 ---
 include:
  - board: xiao_ble
-   shield: mtk64_R rgbled_adapter
+   shield: settings_reset
  - board: xiao_ble
    shield: mtk64_L rgbled_adapter
  - board: xiao_ble
