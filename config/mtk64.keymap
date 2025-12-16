@@ -110,7 +110,7 @@
 
         default_layer {
             bindings = <
-&kp CAPS  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp SLASH  &kp ESC  &kp Q  &kp L  &kp U  &kp COMMA  &kp PERIOD  &kp F  &kp W  &kp R  &kp Y  &kp P  &kp EQUAL  &kp TAB  &kp E  &kp I  &kp A  &kp O  &kp MINUS  &kp K  &kp T  &kp N  &kp S  &kp H  &kp RET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp SEMICOLON  &kp LS(CAPS)  &mt RIGHT_ALT UP_ARROW  &kp G  &kp D  &kp M  &kp J  &kp B  &kp RIGHT_SHIFT  &kp LC(LS(END))  &kp LCTRL  &kp RCTRL  &kp DELETE  &kp BACKSPACE  &mt LEFT_SHIFT DOWN  &kp LEFT_GUI  &kp RIGHT_ALT  &kp LC(HOME)  &kp RIGHT_SHIFT  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp ENTER  &tog 2  &lt 1 SPACE  &lt 2 BACKSPACE  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
+&kp CAPS  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp SLASH  &kp ESC  &kp Q  &kp L  &kp U  &kp COMMA  &kp PERIOD  &kp F  &kp W  &kp R  &kp Y  &kp P  &kp EQUAL  &kp TAB  &kp E  &kp I  &kp A  &kp O  &kp MINUS  &kp K  &kp T  &kp N  &kp S  &kp H  &kp RET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp SEMICOLON  &kp LS(CAPS)  &mt RIGHT_ALT UP_ARROW  &kp G  &kp D  &kp M  &kp J  &kp B  &kp RIGHT_SHIFT  &kp LC(LS(END))  &kp LCTRL  &kp RCTRL  &kp DELETE  &kp BACKSPACE  &mt LEFT_SHIFT DOWN  &kp LEFT_GUI  &kp RIGHT_ALT  &kp LC(HOME)  &kp LC(LS(END))  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp ENTER  &tog 2  &lt 1 SPACE  &lt 2 BACKSPACE  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
             >;
 
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
