@@ -19,10 +19,14 @@
 */
 
 / {
+    aliases {
+        led-red = &led_red_node;
+        led-green = &led_green_node;
+        led-blue = &led_blue_node;
+    };
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
     };
 };
 
