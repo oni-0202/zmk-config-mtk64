@@ -117,7 +117,7 @@
 
         layer_1 {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &trans  &kp MINUS  &kp KP_NUMBER_7  &kp F5  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &kp PG_UP  &mmv MOVE_UP  &kp PG_DN  &trans  &kp F12  &trans  &kp F2  &lt 3 F5  &mkp MCLK  &mkp LCLK  &mkp RCLK  &kp HOME  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp END  &KagiKakko  &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp F2  &kp LEFT_WIN  &trans  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &kp LA(RETURN)  &to 0  &to 2  &trans  &trans  &kp LC(RET)  &kp RA(ENTER)  &trans  &trans  &trans  &trans  &kp HOME  &kp END  &trans  &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &trans  &kp MINUS  &kp KP_NUMBER_7  &kp F5  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &kp PG_UP  &mmv MOVE_UP  &kp PG_DN  &trans  &kp F12  &trans  &kp F2  &lt 3 F5  &mkp MCLK  &mkp LCLK  &mkp RCLK  &kp HOME  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp END  &kp RS(ENTER)  &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp F2  &kp LEFT_WIN  &trans  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &KagiKakko  &to 0  &to 2  &trans  &trans  &kp LC(RET)  &kp LA(ENTER)  &trans  &trans  &trans  &trans  &kp HOME  &kp END  &trans  &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp D S>, <&scroll_ctrl_up_down>;
